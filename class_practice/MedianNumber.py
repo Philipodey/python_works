@@ -8,11 +8,16 @@ print(number)
 arrange_number = len(number)
 if arrange_number % 2 == 0:
     first_median = number[arrange_number // 2]
-    second_median = number[arrange_number // 2 - 1]
+    second_median = number[(arrange_number // 2) - 1]
     median = (first_median + second_median) / 2
 else:
     median = number[arrange_number // 2]
-
+sum = 0
+for count in number:
+    sum += count
+mean = sum / arrange_number
+print(sum)
 print(f"The median is {median}")
+print(f'The mean is {mean}')
 
 
