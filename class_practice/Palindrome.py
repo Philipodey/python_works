@@ -13,7 +13,6 @@ def is_palindrome(number):
         return False
 
 
-class Palindrome:
-    pass
+print(is_palindrome(1221))
 
 
