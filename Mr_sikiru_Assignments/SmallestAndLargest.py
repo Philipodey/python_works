@@ -4,7 +4,7 @@ smallest =0
 add = 0
 average = 1
 product = 1
-for count in range(1, 4):
+for count in range(1, 5):
     least = smallest
     count += count
     number = int(input("Enter a number : "))
@@ -20,6 +20,6 @@ print(f"""
         The sum of the numbers is {add}
     The average of the number is {average}
     The product of the number are {product}
-    The smallest of the number is {smallest}
+    The smallest of the number is {least}
     The largest of the number is {largest}
 """)

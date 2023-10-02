@@ -11,5 +11,6 @@ class TestNative(TestCase):
         my_native.set_name("Philip")
         print("The name of the student of is", my_native.get_name())
         my_native.set_scv_id("scv23030")
-        print("The students scv id is", my_native.get_scv_id())
+        prin
+        t("The students scv id is", my_native.get_scv_id())
 
