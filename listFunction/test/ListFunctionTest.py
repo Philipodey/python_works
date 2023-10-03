@@ -43,6 +43,13 @@ class MyTestCase(unittest.TestCase):
     def test_concatenate_two_lists(self):
         first_list = ["d", "a", "d"]
         second_list = [1, 2, 3, 4]
-        concatenate = ["d","a","d",1,2,3,4]
-        result = concatenate_two_lists(first_list,second_list)
-        self.assertEqual(result,concatenate)
+        concatenate = ["d", "a", "d", 1, 2, 3, 4]
+        result = concatenate_two_lists(first_list, second_list)
+        self.assertEqual(result, concatenate)
+
+    def test_concatenate_two_lists_alternatively(self):
+        first_list = ["d", "a", "d"]
+        second_list = [1, 2, 3, 4]
+        concatenate = ["d", "a", "d", 1, 2, 3, 4]
+        result = concatenate_two_lists(first_list, second_list)
+        self.assertEqual(result, concatenate)

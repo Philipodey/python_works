@@ -68,7 +68,7 @@ def combines_two_list(first_list, second_list):
 
 char = ['a', 'b', 'c']
 integer = [1, 2, 3]
-print(combines_two_list(char, integer))
+print(concatenate_two_lists(char, integer))
 
 # lists = "wat"
 # print(string_is_palindrome(lists))
