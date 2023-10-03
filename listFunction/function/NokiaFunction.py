@@ -18,31 +18,35 @@ def nokia_function():
           
     """)
 
-    nokia = int(input("Select an option: "))
-    if nokia == 1:
+    nokia = str(input("Select an option: "))
+    if nokia == '1':
         print(phone_book())
-    elif nokia == 2:
+    elif nokia == '2':
         print(messages())
-    elif nokia == 3:
+
+    elif nokia == '3':
         print(chats())
-    elif nokia == 4:
+    elif nokia == '4':
         print(call_register())
-    elif nokia == 5:
+    elif nokia == '5':
         print(tones())
-    elif nokia == 6:
+    elif nokia == '6':
         print(settings())
-    elif nokia == 7:
+    elif nokia == '7':
         print(call_divert())
-    elif nokia == 8:
+    elif nokia == '8':
         print(games())
-    elif nokia == 9:
+    elif nokia == '9':
         print(calculator())
-    elif nokia == 10:
+    elif nokia == '10':
         print(reminders())
-    elif nokia == 11:
+    elif nokia == '11':
         print(clock())
-    elif nokia == 12:
+    elif nokia == '12':
         print(sim_services())
+    else:
+        print("Invalid input")
+        nokia_function()
 
 
 def phone_book():
@@ -61,22 +65,22 @@ def phone_book():
                       11. Back to menu
                       ***************
                       """)
-    phone_book_input = int(input("Select an option: "))
-    if phone_book_input == 1:
+    phone_book_input = str(input("Select an option: "))
+    if phone_book_input == '1':
         print("search")
-    elif phone_book_input == 2:
+    elif phone_book_input == '2':
         print("Service Nos")
-    elif phone_book_input == 3:
+    elif phone_book_input == '3':
         print("Erase")
-    elif phone_book_input == 4:
+    elif phone_book_input == '4':
         print("Edit")
-    elif phone_book_input == 5:
+    elif phone_book_input == '5':
         print("Assign tone")
-    elif phone_book_input == 6:
+    elif phone_book_input == '6':
         print("Assign tone")
-    elif phone_book_input == 7:
+    elif phone_book_input == '7':
         print("Send b' card ")
-    elif phone_book_input == 8:
+    elif phone_book_input == '8':
         print("Options")
         print(""""
                   **********************
@@ -86,20 +90,26 @@ def phone_book():
                   4. Back to menu
                   *********************
         """)
-        option_input = int(input("Select an option: "))
-        if option_input == 1:
+        option_input = str(input("Select an option: "))
+        if option_input == '1':
             print("Type of view")
-        elif option_input == 2:
+        elif option_input == '2':
             print("Memory status")
-        elif option_input == 3:
+        elif option_input == '3':
             print(phone_book())
-        elif option_input == 4:
+        elif option_input == '4':
             print(nokia_function())
-    elif phone_book_input == 9:
+        else:
+            print("Invalid input!")
+            print(phone_book())
+    elif phone_book_input == '9':
         print("Speed dials")
-    elif phone_book_input == 10:
+    elif phone_book_input == '10':
         print("Voice tags")
-    elif phone_book_input == 11:
+    elif phone_book_input == '11':
+        print(nokia_function())
+    else:
+        print("Invalid input")
         print(nokia_function())
 
 
@@ -120,20 +130,20 @@ def messages():
              11. Back to menu
              ***************************
     """)
-    message = int(input("Select an option: "))
-    if message == 1:
+    message = str(input("Select an option: "))
+    if message == '1':
         print("Write messages")
-    elif message == 2:
+    elif message == '2':
         print("Inbox")
-    elif message == 3:
+    elif message == '3':
         print("Outbox")
-    elif message == 4:
+    elif message == '4':
         print("Picture messages")
-    elif message == 5:
+    elif message == '5':
         print("Templates")
-    elif message == 6:
+    elif message == '6':
         print("Smileys")
-    elif message == 7:
+    elif message == '7':
         print("Message settings")
         print(""""
                   **********************
@@ -143,8 +153,8 @@ def messages():
                   4. Back to main menu
                   *********************
         """)
-        message_settings = int(input("Select an option: "))
-        if message_settings == 1:
+        message_settings = input("Select an option: ")
+        if message_settings == '1':
             print("Set")
             print("""
                      *************************
@@ -155,19 +165,22 @@ def messages():
                      5. Back to main menu
                      ************************
             """)
-            set = int(input("Select an option: "))
-            if set == 1:
+            set_input = input("Select an option: ")
+            if set_input == '1':
                 print("Message centre number")
-            elif set == 2:
+            elif set_input == '2':
                 print("Messages sent as")
-            elif set == 3:
+            elif set_input == '3':
                 print("Message validity")
-            elif set == 4:
+            elif set_input == '4':
                 print(messages())
-            elif set == 5:
+            elif set_input == '5':
                 print(nokia_function())
+            else:
+                print("INVALID NUMBER")
+                print(messages())
 
-        elif message_settings == 2:
+        elif message_settings == '2':
             print("Common")
             print(""""
                       *************************
@@ -179,40 +192,52 @@ def messages():
                       **************************
             """)
             common = int(input("Select an option: "))
-            if common == 1:
+            if common == '1':
                 print("Delivery")
-            elif common == 2:
+            elif common == '2':
                 print("Reply via same centre")
-            elif common == 3:
+            elif common == '3':
                 print("Character support")
-            elif common == 4:
+            elif common == '4':
                 print(messages())
-            elif common == 5:
+            elif common == '5':
                 print(nokia_function())
+            else:
+                print("INVALID INPUT")
+                print(messages())
 
-        elif message_settings == 3:
+        elif message_settings == '3':
             print(messages())
-        elif message_settings == 4:
+        elif message_settings == '4':
             print(nokia_function())
-    elif message == 8:
+        else:
+            print("INVALID INPUT")
+            print(messages())
+    elif message == '8':
         print("Info service")
-    elif message == 9:
+    elif message == '9':
         print("Voice mailbox number")
-    elif message == 10:
+    elif message == '10':
         print("service command editor")
-    elif message == 11:
+    elif message == '11':
+        print(nokia_function())
+    else:
+        print("INVALID NUMBER")
         print(nokia_function())
 
 
 def chats():
     print("Chats")
-    print(""""
+    print("""
               *****************
               1. Back to menu
               *****************
     """)
-    chat = int(input("Enter a n option: "))
-    if chat == 1:
+    chat = input("Enter option: ")
+    if chat == '1':
+        print(nokia_function())
+    else:
+        print("INVALID INPUT")
         print(nokia_function())
 
 
@@ -231,16 +256,16 @@ def call_register():
               9. Back to menu
               **************************
     """)
-    call_register_input = int(input("Select an option: "))
-    if call_register_input == 1:
+    call_register_input = input("Select an option: ")
+    if call_register_input == '1':
         print("Missed calls")
-    elif call_register_input == 2:
+    elif call_register_input == '2':
         print("Received calls")
-    elif call_register_input == 3:
+    elif call_register_input == '3':
         print("Dialled numbers")
-    elif call_register_input == 4:
+    elif call_register_input == '4':
         print("Erase Show call duration")
-    elif call_register_input == 5:
+    elif call_register_input == '5':
         print("Show call duration")
         print("""
                  *************************
@@ -254,23 +279,26 @@ def call_register():
                                 
                  *************************
         """)
-        show_call_duration = int(input("Select an option: "))
-        if show_call_duration == 1:
+        show_call_duration = input("Select an option: ")
+        if show_call_duration == '1':
             print("Last call duration")
-        elif show_call_duration == 2:
+        elif show_call_duration == '2':
             print("All calls' duration")
-        elif show_call_duration == 3:
+        elif show_call_duration == '3':
             print("Received calls' duration")
-        elif show_call_duration == 4:
+        elif show_call_duration == '4':
             print("Dialled calls' duration")
-        elif show_call_duration == 5:
+        elif show_call_duration == '5':
             print("Clear timer")
-        elif show_call_duration == 6:
+        elif show_call_duration == '6':
             print(call_register())
-        elif show_call_duration == 7:
+        elif show_call_duration == '7':
             print(nokia_function())
+        else:
+            print("INVALID NUMBER")
+            print(call_register())
 
-    elif call_register_input == 6:
+    elif call_register_input == '6':
         print("Show call costs")
         print(""""
                   **********************
@@ -281,19 +309,22 @@ def call_register():
                   5. Back to main menu
                   **********************
         """)
-        call_cost = int(input("Select an option: "))
-        if call_cost == 1:
+        call_cost = input("Select an option: ")
+        if call_cost == '1':
             print("Last call cost")
-        if call_cost == 2:
+        elif call_cost == '2':
             print("All calls' cost")
-        if call_cost == 3:
+        elif call_cost == '3':
             print("Back to call register")
-        if call_cost == 4:
+        elif call_cost == '4':
             print(call_register())
-        if call_cost == 5:
+        elif call_cost == '5':
             print(nokia_function())
+        else:
+            print("INVALID INPUT")
+            print(call_register())
 
-    elif call_register_input == 7:
+    elif call_register_input == '7':
         print("Call cost settings")
         print(""""
                   ************************
@@ -303,19 +334,25 @@ def call_register():
                   4. Back to menu
                   ************************
         """)
-        cost_settings = int(input("Select an option: "))
-        if cost_settings == 1:
+        cost_settings = input("Select an option: ")
+        if cost_settings == '1':
             print("Call cost limit")
-        if cost_settings == 1:
+        elif cost_settings == '2':
             print("Show costs in")
-        if cost_settings == 1:
+        elif cost_settings == '3':
             print(call_register())
-        if cost_settings == 1:
+        elif cost_settings == '4':
             print(nokia_function())
+        else:
+            print("INVALID INPUT")
+            print(call_register())
 
-    elif call_register_input == 8:
+    elif call_register_input == '8':
         print("Prepaid credit")
-    elif call_register_input == 9:
+    elif call_register_input == '9':
+        print(nokia_function())
+    else:
+        print("INVALID INPUT")
         print(nokia_function())
 
 
@@ -335,26 +372,29 @@ def tones():
               10. Back to menu
               ************************* 
     """)
-    tone = int(input("Select an option: "))
-    if tone == 1:
+    tone = input("Select an option: ")
+    if tone == '1':
         print("Ringing tone")
-    elif tone == 2:
+    elif tone == '2':
         print("Ringing volume")
-    elif tone == 3:
+    elif tone == '3':
         print("Incoming call divert")
-    elif tone == 4:
+    elif tone == '4':
         print("Composer")
-    elif tone == 5:
+    elif tone == '5':
         print("Messages alert tone")
-    elif tone == 6:
+    elif tone == '6':
         print("Keypad tones")
-    elif tone == 7:
+    elif tone == '7':
         print("Warning and game tones")
-    elif tone == 8:
+    elif tone == '8':
         print("Vibrating alert")
-    elif tone == 9:
+    elif tone == '9':
         print("Screen saver")
-    elif tone == 10:
+    elif tone == '10':
+        print(nokia_function())
+    else:
+        print("INVALID NUMBER")
         print(nokia_function())
 
 
@@ -369,8 +409,8 @@ def settings():
               5. Back to menu
               ******************************
     """)
-    settings_input = int(input("Select an option: "))
-    if settings_input == 1:
+    settings_input = input("Select an option: ")
+    if settings_input == '1':
         print("Call settings")
         print("""
                 *****************************
@@ -384,25 +424,27 @@ def settings():
                  8. Back to menu
                 *******************************
         """)
-        call_setting = int(input("Select an option: "))
-        if call_setting == 1:
+        call_setting = input("Select an option: ")
+        if call_setting == '1':
             print("Automatic redial")
-        elif call_setting == 2:
+        elif call_setting == '2':
             print("Speed dailling")
-        elif call_setting == 3:
+        elif call_setting == '3':
             print("call waiting options")
-        elif call_setting == 4:
+        elif call_setting == '4':
             print("Own number sending")
-        elif call_setting == 5:
+        elif call_setting == '5':
             print("Phone line in use")
-        elif call_setting == 6:
+        elif call_setting == '6':
             print("Automatic answer")
-        elif call_setting == 7:
+        elif call_setting == '7':
             print("Back to settings")
-        elif call_setting == 8:
+        elif call_setting == '8':
             print(nokia_function())
-
-    elif settings_input == 2:
+        else:
+            print("INVALID NUMBER")
+            print(nokia_function())
+    elif settings_input == '2':
         print("Phone settings")
         print("""
                   *******************************
@@ -416,30 +458,36 @@ def settings():
                   8. back to menu
                   *******************************
         """)
-        phone_settings = int(input("Select an option: "))
-        if phone_settings == 1:
+        phone_settings = input("Select an option: ")
+        if phone_settings == '1':
             print("Language")
-        elif phone_settings == 2:
+        elif phone_settings == '2':
             print("Cell info display")
-        elif phone_settings == 3:
+        elif phone_settings == '3':
             print("Welcome note")
-        elif phone_settings == 4:
+        elif phone_settings == '4':
             print("Network selection")
-        elif phone_settings == 5:
+        elif phone_settings == '5':
             print("Lights")
-        elif phone_settings == 6:
+        elif phone_settings == '6':
             print("Confirm SIM service answer")
-        elif phone_settings == 7:
+        elif phone_settings == '7':
             print(settings())
-        elif phone_settings == 8:
+        elif phone_settings == '8':
             print(nokia_function())
+        else:
+            print("INVALID INPUT")
+            print(settings())
 
-    elif settings_input == 3:
+    elif settings_input == '3':
         print("Security settings")
 
-    elif settings_input == 4:
+    elif settings_input == '4':
         print("Restore factory settings")
-    elif settings_input == 5:
+    elif settings_input == '5':
+        print(nokia_function())
+    else:
+        print("INVALID INPUT")
         print(nokia_function())
 
 
@@ -450,8 +498,11 @@ def call_divert():
               1. Back to menu
               ****************
     """)
-    divert = int(input("Select an option: "))
-    if divert == 1:
+    divert = input("Select an option: ")
+    if divert == '1':
+        print(nokia_function())
+    else:
+        print("INVALID INPUT")
         print(nokia_function())
 
 
@@ -462,6 +513,12 @@ def games():
              1. Back to menu
              ***************
     """)
+    game = input("Select an option: ")
+    if game == '1':
+        print(nokia_function())
+    else:
+        print("INVALID INPUT")
+        print(nokia_function())
 
 
 def calculator():
@@ -471,8 +528,11 @@ def calculator():
              1. Back to menu
              ****************
     """)
-    calculator_input = int(input("Select an option: "))
-    if calculator_input == 1:
+    calculator_input = input("Select an option: ")
+    if calculator_input == '1':
+        print(nokia_function())
+    else:
+        print("INVALID INPUT")
         print(nokia_function())
 
 
@@ -483,8 +543,11 @@ def reminders():
              1. Back to menu
              *****************
     """)
-    reminder = int(input("Select an option: "))
-    if reminder == 1:
+    reminder = input("Select an option: ")
+    if reminder == '1':
+        print(nokia_function())
+    else:
+        print("INVALID INPUT")
         print(nokia_function())
 
 
@@ -501,20 +564,23 @@ def clock():
              7. Back to menu 
              *********************************
     """)
-    clock_input = int(input("Select an option: "))
-    if clock_input == 1:
+    clock_input = input("Select an option: ")
+    if clock_input == '1':
         print("Alarm clock")
-    elif clock_input == 2:
+    elif clock_input == '2':
         print("Clock settings")
-    elif clock_input == 3:
+    elif clock_input == '3':
         print("Date settings")
-    elif clock_input == 4:
+    elif clock_input == '4':
         print("Stopwatch")
-    elif clock_input == 5:
+    elif clock_input == '5':
         print("Countdown timer")
-    elif clock_input == 6:
+    elif clock_input == '6':
         print("Auto update of date and time")
-    elif clock_input == 7:
+    elif clock_input == '7':
+        print(nokia_function())
+    else:
+        print("INVALID INPUT")
         print(nokia_function())
 
 
@@ -525,8 +591,11 @@ def profiles():
             1. Back to menu
             ****************    
      """)
-    profile = int(input("Select option: "))
-    if profile == 1:
+    profile = input("Select option: ")
+    if profile == '1':
+        print(nokia_function())
+    else:
+        print("INVALID INPUT")
         print(nokia_function())
 
 
@@ -537,8 +606,11 @@ def sim_services():
                1. Back to menu
                ****************
     """)
-    sim_service = int(input("Select option: "))
-    if sim_service == 1:
+    sim_service = input("Select option: ")
+    if sim_service == '1':
+        print(nokia_function())
+    else:
+        print("INVALID INPUT")
         print(nokia_function())
 
 
