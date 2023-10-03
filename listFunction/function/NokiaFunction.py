@@ -32,13 +32,17 @@ def nokia_function():
     elif nokia == 6:
         print(settings())
     elif nokia == 7:
-        print()
+        print(call_divert())
     elif nokia == 8:
-        print()
+        print(games())
     elif nokia == 9:
-        print()
+        print(calculator())
     elif nokia == 10:
-        print()
+        print(reminders())
+    elif nokia == 11:
+        print(clock())
+    elif nokia == 12:
+        print(sim_services())
 
 
 def phone_book():
@@ -436,6 +440,105 @@ def settings():
     elif settings_input == 4:
         print("Restore factory settings")
     elif settings_input == 5:
+        print(nokia_function())
+
+
+def call_divert():
+    print("Call divert")
+    print("""
+              ****************
+              1. Back to menu
+              ****************
+    """)
+    divert = int(input("Select an option: "))
+    if divert == 1:
+        print(nokia_function())
+
+
+def games():
+    print("Games")
+    print("""
+             ****************
+             1. Back to menu
+             ***************
+    """)
+
+
+def calculator():
+    print("Calculator")
+    print("""
+             ****************
+             1. Back to menu
+             ****************
+    """)
+    calculator_input = int(input("Select an option: "))
+    if calculator_input == 1:
+        print(nokia_function())
+
+
+def reminders():
+    print("Reminders")
+    print("""
+             *****************
+             1. Back to menu
+             *****************
+    """)
+    reminder = int(input("Select an option: "))
+    if reminder == 1:
+        print(nokia_function())
+
+
+def clock():
+    print("Clock")
+    print("""
+             *******************************
+             1. Alarm clock
+             2. Clock settings
+             3. Date settings
+             4. Stopwatch
+             5. Countdown timer
+             6. Auto update of date and time
+             7. Back to menu 
+             *********************************
+    """)
+    clock_input = int(input("Select an option: "))
+    if clock_input == 1:
+        print("Alarm clock")
+    elif clock_input == 2:
+        print("Clock settings")
+    elif clock_input == 3:
+        print("Date settings")
+    elif clock_input == 4:
+        print("Stopwatch")
+    elif clock_input == 5:
+        print("Countdown timer")
+    elif clock_input == 6:
+        print("Auto update of date and time")
+    elif clock_input == 7:
+        print(nokia_function())
+
+
+def profiles():
+    print("Profiles")
+    print("""
+            ****************
+            1. Back to menu
+            ****************    
+     """)
+    profile = int(input("Select option: "))
+    if profile == 1:
+        print(nokia_function())
+
+
+def sim_services():
+    print("SIM services")
+    print("""
+               ****************
+               1. Back to menu
+               ****************
+    """)
+    sim_service = int(input("Select option: "))
+    if sim_service == 1:
         print(nokia_function())
 
 
