@@ -23,7 +23,6 @@ def nokia_function():
         print(phone_book())
     elif nokia == '2':
         print(messages())
-
     elif nokia == '3':
         print(chats())
     elif nokia == '4':
