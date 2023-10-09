@@ -19,15 +19,15 @@ numbers = int(input("Enter the number of elements: "))
 my_list = []
 add = 0
 average = 0
-minimum = numbers[0]
-maximum = numbers[0]
+minimum = 0
+maximum = 0
 
 for count in range(1, numbers):
     scores = int(input(f"Enter the elements {count}: "))
     my_list.append(scores)
     add = add + scores
-    if maximum < numbers:
-        maximum = scores
+    if count < numbers:
+        minimum = count
 
 
 average = add / count
